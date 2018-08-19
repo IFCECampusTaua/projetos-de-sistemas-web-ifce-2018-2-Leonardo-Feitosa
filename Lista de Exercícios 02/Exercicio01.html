@@ -1,0 +1,88 @@
+<!--EXERCÍCIO 1 - LISTA 02-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Ficha Cadastral</title>
+	<!-- Estilo de formatação da página -->
+	<style>
+		table {
+			width: 500px; /*Largura da tabela*/
+			font-family: arial; /*Tipo de fonte*/
+			border-spacing: 2px; /*Espaçamento entre células*/
+			padding: 1px; /*Define o preenchimento para todos os quatro lados de um elemento*/
+			margin: auto; /*Centraliza a tabela na página*/
+			font-size: 18px; /*Tamanho da fonte*/
+		}
+		/*
+		table, th, td {
+	    	border: 1px solid black;
+	    	border-collapse: collapse;
+		}
+		*/
+		.alinhar {
+			float: right;
+		}
+
+		.info{
+			padding-right: 50px;
+		}
+		span#cpf {
+			padding-left: 20px;
+		}
+
+		span#datnas {
+			padding-left: 55px;
+		}
+
+		td#centro {
+			text-align: center;
+		}
+	</style>
+	
+</head>
+
+<body>
+	<h2><center><b>FICHA CADASTRAL</b></center></h2>
+	
+	<div>
+		<form method="post" accept-charset="utf-8">
+			<table>
+				<tr>
+					<td class="info">Nome:</td>
+					<td><input type="text" name="tNome" required size="55" maxlength="55"></td>
+				</tr>
+	
+				<tr>
+					<td class="info">RG:</td><td><input type="text" name="nRG" required size="13" maxlength="13"><span id="cpf">C.P.F.:</span><input type="text" name="nCPF" required size="13" maxlength="13" class="alinhar"></td>
+				</tr>
+
+				<tr>
+					<td class="info">Endereço:</td> <td><input type="text" name="tEnd" required size="55" maxlength="55"></td>
+				</tr>
+
+				<tr>
+					<td class="info">Sexo:</td>
+					<td>
+						<select>
+							<option value="Masculino">Masculino</option>
+							<option value="Feminino">Feminino</option>
+						</select>
+						<span id="datnas">Data Nascimento:</span><input type="text" name="tDataNasc" required size="13" maxlength="13" class="alinhar">
+					</td>
+				</tr>
+
+				<tr>
+					<td class="info">Situação&nbsp;Civil:</td>
+					<td id="centro">
+						<input type="radio" name="estCivil" value="solteiro">Solteiro(a)&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="estCivil" value="casado">Casado(a)&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="estCivil" value="viuvo">Viúvo(a)
+					</td>
+				</tr>
+				<tr><td colspan="2"><center><input type="reset" value="Limpar Dados"></center></td></tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

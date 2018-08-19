@@ -1,0 +1,70 @@
+<!--EXERCÍCIO 2 - LISTA 02-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Divisões HTML</title>
+
+	<style type="text/css" media="screen">
+		table {
+			border: 3px solid #1a1aff;
+			background-color: #ffcccc;
+			width: 240px;
+			height: 380px;
+			border-collapse: collapse;
+			padding: 10px;
+			margin: 20px;
+			font-family: Helvetica;
+			font-size: 19px;
+			font-weight: bold;
+		}
+		
+		tr,td {
+			border: 3px solid #1a1aff;
+		}
+
+		.tr0{
+			height: 50px;
+		}
+
+		table#tab2 {
+			background-color: #cccccc;
+		}
+
+		tr#tr1 {
+    		border: 3px solid #ff0066;
+		}
+	</style>
+</head>
+<body>
+	<!-- criando tabela-->
+	<table>
+		<!-- criando 1ª coluna-->
+		<tr class="tr0">
+			<td colspan="2"><center>Header</center></td>
+		</tr>
+
+		<tr class="tr0">
+			<td colspan="2"><center>Nav</center></td>
+		</tr>
+
+		<!-- criando 2ª coluna-->
+		<tr id="tr1">
+			
+			<td><center><span>Section</span></center><table id="tab2">
+							<tr><td><center>Article</center></td></tr>
+							<tr><td><center>Article</center></td></tr>
+							<tr><td><center>Article</center></td></tr>
+						</table>
+			</td>
+		    
+			<td id="td3">&nbsp;&nbsp;<table><tr><td><center><span>Aside</span></center></td></tr></table></td>
+		</tr>
+
+		<tr class="tr0">
+			<td colspan="2"><center>Footer</center></td>
+		</tr>
+		</table>
+		<!-- Fim da tabela-->
+</body>
+</html>
