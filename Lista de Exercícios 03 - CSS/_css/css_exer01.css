@@ -1,0 +1,16 @@
+
+div{
+	font-family: Verdana;
+	font-size: 12px;
+	text-align: center;
+	/* Para duplicar o espaço, define-se o line-height para 200%, ou seja, duas vezes o padrão (100%) */
+	line-height: 200%;
+	width: 100%;
+	border: 2px solid black;
+	margin: auto;
+	background-image: linear-gradient(to bottom right, #0493A4, #23B4C5, #0C1996, #41596D, #272D32);
+}
+
+p#ifce{
+ 	color: #008000;
+}

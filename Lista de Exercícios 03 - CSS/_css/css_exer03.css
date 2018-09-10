@@ -1,0 +1,93 @@
+table{
+  font-family: Arial;
+  border-collapse: collapse;
+  width: 50%;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  margin: auto;
+}
+
+th, td{
+  padding: 8px;
+  border-bottom: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
+}
+
+td.pos123{
+  color: #0000cc;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  width: 30px;
+}
+
+td.pos4{
+  color: #1398BE;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  width: 30px;
+}
+
+td.pos56{
+  color: #DE9800;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  width: 30px;
+}
+
+td.time{
+  font-size: 14px;
+  color: #666666;
+  font-weight: bold;
+  text-align: left;
+}
+
+td.outros-criterios{
+  font-size: 14px;
+  color: #666666;
+  text-align: center;
+}
+
+td.crit-cinza{
+  background: #f7f7f7;
+  text-align: center;
+  font-size: 14px;
+}
+
+td.crit-titulo{
+  font-size: 13px;
+  color: #999999;
+  font-weight: bold;
+  text-align: center;
+  width: 20px;
+}
+
+td.crit-branco{
+  font-size: 13px;
+  color: #999999;
+  font-weight: bold;
+  text-align: center;
+  width: 20px;
+}
+
+td.crit-porc{
+  font-size: 13px;
+  color: #999999;
+  font-weight: bold;
+  text-align: center;
+  width: 50px;
+}
+
+td.crit-pontos{
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  background: #f7f7f7;
+  width: 20px;
+}
+
+tr#divisao{
+  border-bottom: 2px solid #cccccc;
+}
