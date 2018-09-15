@@ -1,0 +1,100 @@
+body{
+	font: Arial;
+	font-size: 22px;
+	color: #ffffff;
+}
+
+section{
+	width: 650px;
+	height: 450px;
+	margin: auto;
+	background: black;
+}
+	
+header{
+	width: 200px;
+	height: 150px;
+	background: #ff6600;
+	float: left;
+	/*background: linear-gradient(to bottom, #000080, 20%, #207cca 50%, #7db9e8 100%);*/
+}
+
+aside{
+	width: 200px;
+	height: 300px;
+	background: #33bbff;
+	float: left;
+}
+	
+article{
+	width: 450px;
+	height: 350px;
+	float: right;
+	background: #ff9933;
+}
+
+table.tabela{
+	width: 150px;
+	background: white;
+	border-collapse: collapse;
+	border-radius: 8px;
+	float: right;
+	margin-top: 130px;
+	margin-right: 20px;
+	color: #000000;
+	box-shadow: 5px 5px 5px 2px rgba(00, 00, 00, 0.6);
+}
+
+.mesclado{
+	background: #00aaff;
+	border-radius: 8px;
+	line-height: 0px;
+	text-indent: 5px;
+}
+
+.celula{
+	border-radius: 8px;
+	background: white;
+}
+
+div.area_direita{
+	width: 100px;
+	height: 100px;
+	background: #66cc00;
+	float: right;
+}
+
+div.area_esquerda{
+	width: 350px;
+	height: 100px;
+	background: #0047b3;
+	float: left;
+}
+		
+div.titulos{
+	font-family: Tahoma;
+	font-size: 22px;
+	color: #ffffff;
+	text-indent: 8px;
+}
+
+/*Formatação extra: enunciado*/
+
+.w3-painel-amarelo{
+	background-color: #ffffcc;
+	color: #000000;
+	border-left: 6px solid #ffeb3b;
+	border-right: 6px solid #ffeb3b;
+	padding: 0.01em 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.w3-painel-verde{
+	background-color: #ddffdd;
+	border-left: 6px solid #4caf50;
+	border-right: 6px solid #4caf50;
+	font-size: 18pt;
+	font-weight: bold;
+	text-align: center;
+}
