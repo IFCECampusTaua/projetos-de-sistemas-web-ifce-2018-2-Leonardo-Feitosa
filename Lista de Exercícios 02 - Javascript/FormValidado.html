@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<meta charset="utf-8"/>
+		<title>Formulário Validado</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<!--Frameworks-->
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/additional-methods.min.js"></script>
+		<script type="text/javascript" src="js/localization/messages_pt_BR.js"></script>
+
+		<style type="text/css">
+			#centro{
+				text-align: center;
+				font-family: Arial, sans-serif;
+			}
+       		.error{
+             	color: red;
+             	font-size: 12pt;
+       		}
+       		::-webkit-input-placeholder{
+       			font-family: Tahoma;
+				font-style: italic;
+			}
+			label{
+				font-size: 13pt;
+			}
+		</style>
+
+		<script type="text/javascript">
+			// Validar nº de celular
+			jQuery.validator.addMethod("celular", function (value, element) {
+			    value = value.replace("(","");
+			    value = value.replace(")", "");
+			    value = value.replace("-", "");
+			    value = value.replace(" ", "").trim();
+			    if (value == '0000000000') {
+			        return (this.optional(element) || false);
+			    } else if (value == '00000000000') {
+			        return (this.optional(element) || false);
+			    } 
+			    if (["00", "01", "02", "03", , "04", , "05", , "06", , "07", , "08", "09", "10"].indexOf(value.substring(0, 2)) != -1) {
+			        return (this.optional(element) || false);
+			    }
+			    if (value.length < 9 || value.length > 9) {
+			        return (this.optional(element) || false);
+			    }
+			    if (["6", "7", "8", "9"].indexOf(value.substring(2, 3)) == -1) {
+			        return (this.optional(element) || false);
+			    }
+			    return (this.optional(element) || true);
+			}, "Informe um número de celular válido.");
+			$(document).ready(function(){
+    			alert("Preencha os campos.");
+    		});
+			// Regras de validação 
+			$(document).ready(function(){
+				$("#formCadastro").validate({
+					rules:{
+						nome: {
+							required: true,
+							maxlength: 255,
+							minlength: 4,
+							minWords: 2
+						},
+						telefone: {
+							required: true,
+							celular: true
+						},
+						dataNasc: {
+							required: true,
+							date: true
+						},
+						cpf: {
+							required: true,
+							cpfBR: true
+						},
+						instituicao: {
+							required: true,
+							minlength: 4,
+							maxlength: 255
+						},
+						email: {
+							required: true,
+							email: true,
+							maxlength: 255
+						}
+					},
+					submitHandler: function(form){
+						alert("Sucesso!");						
+					}
+				});
+			});
+			
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<div id="centro"><h2>Validação de formulário com JQuery</h2></div>
+			<form action="" name="formCadastro" id="formCadastro" method="post">
+				<div class="row">
+					<label>Nome</label>
+					<input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome e sobrenome"/>
+				</div>	
+				<div class="row">
+					<label>Telefone</label>
+					<input type="number" name="telefone" id="telefone" class="form-control" placeholder="Digite seu número de telefone celular"/>
+				</div>
+				<div class="row">
+					<label>Data de Nascimento</label>
+					<input type="date" name="dataNasc" id="dataNasc" class="form-control"/>
+				</div>
+				<div class="row">
+					<label>CPF</label>
+					<input type="text" name="cpf" id="cpf" class="form-control" placeholder="Digite o número do seu CPF no formato 000.000.000-00" />
+				</div>
+				<div class="row">
+					<label>Instituição</label>
+					<input type="text" name="instituicao" id="instituicao" class="form-control" placeholder="Digite o nome da sua instituição"/>
+				</div>	
+				<div class="row">
+					<label>Email</label>
+					<input type="email" name="email" id="email" class="form-control" placeholder="Digite o seu nome de email válido" />
+				</div>			
+				<div class="row">
+					<label>&nbsp</label>
+					<input type="submit" name="enviar" id="enviar" class="btn btn-primary form-control" />
+				</div>
+			</form> <!--Final formulário-->
+		</div>
+	</body>
+</html>
