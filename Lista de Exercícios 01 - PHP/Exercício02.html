@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>PHP - Exercício 02</title>
+
+		<style type="text/css">
+			.div1{
+				align-items: center;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			.enviar{
+				text-align: center;
+			}
+			table,tr,td{
+				padding: 10px;
+				border: 1px solid black;
+				border-collapse: collapse;
+			}
+			td{
+				border: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div1">
+			<form action="processaDados02.php" method="POST">
+				<table>
+					<tr>
+						<td>Digite um número inteiro positivo (1,2,3,...): </td>
+						<td><input type="number" name="numero" required></td>
+					</tr>
+					<tr class="enviar"><td colspan="2"><input type="submit"></td></tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>

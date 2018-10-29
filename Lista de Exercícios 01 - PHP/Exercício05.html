@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>PHP - Exercício 05</title>
+
+		<style type="text/css">
+			.div1{
+				align-items: center;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			.enviar{
+				text-align: center;
+			}
+			table,tr,td{
+				padding: 10px;
+				border: 1px solid black;
+				border-collapse: collapse;
+			}
+			td{
+				border: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div1">
+			<form action="processaDados05.php" method="POST">
+				<table>
+					<tr>
+						<td>Digite a primeira nota do aluno: </td>
+						<td><input type="number" name="nota1" maxlength="2" required></td>
+					</tr>
+					<tr>
+						<td>Digite a segunda nota do aluno: </td>
+						<td><input type="number" name="nota2"  maxlength="2" required></td>
+					</tr>
+					<tr>
+						<td>Digite a terceira nota do aluno: </td>
+						<td><input type="number" name="nota3"  maxlength="2" required></td>
+					</tr>
+					<tr>
+						<td>Digite a quarta nota do aluno: </td>
+						<td><input type="number" name="nota4"  maxlength="2" required></td>
+					</tr>
+					<tr class="enviar"><td colspan="2"><input type="submit"></td></tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>

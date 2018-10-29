@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>PHP - Exercício 03</title>
+
+		<style type="text/css">
+			.div1{
+				align-items: center;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			.enviar{
+				text-align: center;
+			}
+			table,tr,td{
+				padding: 10px;
+				border: 1px solid black;
+				border-collapse: collapse;
+			}
+			td{
+				border: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div1">
+			<form action="processaDados03.php" method="POST">
+				<table>
+					<tr>
+						<td>Digite uma cadeia de caracteres (string): </td>
+						<td><input type="text" name="string1" required></td>
+					</tr>
+					<tr>
+						<td>Digite outra cadeia de caracteres: </td>
+						<td><input type="text" name="string2" required></td>
+					</tr>
+					<tr class="enviar"><td colspan="2"><input type="submit"></td></tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>
