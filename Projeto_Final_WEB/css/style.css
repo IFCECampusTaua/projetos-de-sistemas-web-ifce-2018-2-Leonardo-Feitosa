@@ -1,0 +1,150 @@
+/* Formatação da página */
+body, html{
+	height: 100%;
+	width: 100%;
+}
+
+.login-block{
+	background: -webkit-linear-gradient(to bottom, #FFB88C, #DE6262); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #FFB88C, #DE6262); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	width: 100%;
+	height: 100%;
+	padding: 50px 0;
+}
+
+.banner-sec{
+	background-size: cover; 
+	max-height: 508px;
+	border-radius: 0 10px 10px 0; 
+	padding: 3px;
+}
+
+.container{
+	background: #FFF; 
+	border-radius: 10px; 
+	box-shadow: 15px 20px 0px rgba(0,0,0,0.1);
+}
+
+.carousel-inner{
+	border-radius: 0 10px 10px 0;
+}
+
+.carousel-caption{
+	text-align: left; 
+	left: 5%;
+}
+
+.login-sec,.cadastro-sec{
+	padding: 40px 25px 36px; 
+	position: relative;
+}
+
+.login-sec .copy-text{
+	position: absolute; 
+	width: 80%; 
+	bottom: 50px; 
+	font-size: 14px; 
+	text-align: center;
+}
+
+.login-sec .copy-text i{
+	color: #FEB58A;
+}
+
+.login-sec .copy-text a{
+	color: #E36262;
+}
+.form-check{
+	padding-left: 0px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.login-sec .left{
+	width: 100%;
+	font-size: 14px; 
+	text-align: left;
+}
+
+.login-sec .left i{
+	color: #FEB58A;
+}
+
+.login-sec .left a{
+	color: #E36262;
+}
+
+.login-sec h2{
+	margin-bottom: 20px; 
+	font-weight: 800; 
+	font-size: 30px; 
+	color: #DE6262;
+}
+
+.login-sec h2: after{
+	content: " ";
+	width: 100px;
+	height: 5px; 
+	background: #FEB58A; 
+	display: block; 
+	margin-top: 20px; 
+	border-radius: 3px; 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.btn-login, .btn-signup{
+	background: #DE6262; 
+	color: #ffffff; 
+	font-weight: 600;
+}
+
+.banner-text{
+	width: 70%; 
+	position: absolute; 
+	bottom: 40px;
+	padding-left: 20px;
+}
+
+.banner-text h5{
+	color: #ffffff; 
+	font-weight: 600;
+}
+
+.banner-text h5: after{
+	content: " "; 
+	width: 100px; 
+	height: 5px; 
+	background: #FFFFFF; 
+	display: block;
+	margin-top: 20px;
+	border-radius: 3px;
+}
+
+.banner-text p{
+	color: #ffffff;
+}
+
+label{
+	font-weight: 600;
+}
+
+::-webkit-input-placeholder{ 
+	font-style: italic;
+}
+
+/* Torne a imagem totalmente responsiva */
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+
+.text-align{
+	margin-top: -18px;
+}
+
+/* Mensagem de error formulário */
+.error{
+    color: red;
+    font-size: 10.5pt;
+}

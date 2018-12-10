@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+    <title>Tela de Login e Cadastro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="imagens/iflogo.ico">
+
+    <!-- Framework Bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
+    <!-- Framework jQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+	<!-- Script auxiliar para o Framework Bootstrap -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	
+	<!-- Plugin jQuery Validation -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+	<!-- Métodos adicionais -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+	<!-- Mensagens em PT-BR -->
+	<script type="text/javascript" src="js_validation/localization/messages_pt_BR.js"></script>
+	<script type="text/javascript" src="js_validation/form_validate.js"></script>
+	<!-- Formatação da página a partir de um CSS externo -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<!-- Corpo da página -->
+<body>
+<div class="login-block">	
+	<div class="container">
+		<div class="row">
+			<!-- Formulário de login -->
+			<div class="col-lg-4 login-sec" id="login">
+				<h2 class="text-center text-align">Login</h2>
+				<form class="login-form" action="login.php" method="POST" id="formLogin">
+					<div class="form-group">
+						<label for="exampleInputEmail1" class="text-uppercase">Nome de Usuário</label>
+						<input type="text" class="form-control" name="nome_user" id="nome_user" placeholder="*Digite seu nome de usuário"  autocomplete="off">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword1" class="text-uppercase">Senha</label>
+						<input type="password" class="form-control" name="senha" id="senha" placeholder="*Digite sua senha" autocomplete="off">
+					</div>
+					<div class="form-check">
+						<div class="left">Não possui uma conta? <a href="#cadastro" id="gocadastro">Criar conta</a><input type="submit" class="btn btn-login float-right" value="Login" name="entrar"></div>
+					</div>
+				</form>
+			</div>
+
+			<!-- Formulário de cadastro -->
+			<div class="col-lg-4 login-sec" id="cadastro">
+				<h2 class="text-center text-align">Cadastre-se</h2>
+				<form class="login-form" action="cadastro.php" method="POST" id="formSignup">
+					<div class="form-group">
+						<label for="exampleInputEmail1" class="text-uppercase">Nome de Usuário</label>
+						<input type="text" class="form-control" name="user" placeholder="*Digite seu nome de usuário"  autocomplete="off">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword1" class="text-uppercase">E-mail</label>
+						<input type="text" class="form-control" name="email" placeholder="*Digite seu email"  autocomplete="off">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword1" class="text-uppercase">Senha</label>
+						<input type="password" class="form-control" name="senha1" id="senha1" placeholder="*Digite sua senha">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword1" class="text-uppercase">Repita a senha</label>
+						<input type="password" class="form-control" name="senha2" id="senha2" placeholder="*Digite sua senha novamente">
+					</div>
+					<div class="form-check">
+						<div class="left">Já possui uma conta? <a href="#login" id="gologin">Entrar</a><input type="submit" class="btn btn-signup float-right" value="Criar conta"></div>
+					</div>
+				</form>
+			</div>
+
+			<!-- Apresentação de slides -->
+			<div class="col-lg-8 banner-sec">
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					<!--  Indicadores -->
+					<ol class="carousel-indicators">
+						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<div class="carousel-item active">
+								<img class="d-block img-fluid" src="imagens/pexels-photo.jpg" alt="First slide" width="945" height="632">
+							<div class="carousel-caption d-none d-md-block">
+								<div class="banner-text">
+									<h5>ENCONTRE O TEMA DO SEU TCC</h5>
+									<p >A escolha do tema do TCC [Monografia, Dissertação e Artigo] é o que  realmente preocupa muitos universitários por ai. Sem falar na apresentação.</p>
+								</div>	
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img class="d-block img-fluid" src="imagens/people-coffee-tea-meeting.jpg" alt="First slide" width="945" height="632">
+							<div class="carousel-caption d-none d-md-block">
+								<div class="banner-text">
+									<h5>ENCONTRE O TEMA DO SEU TCC</h5>
+									<p>Existe inúmeras questões que levam os estudantes a ficarem em dúvida sobre temas para seu Trabalho de conclusão de Curso (TCC).</p>
+								</div>	
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img class="d-block img-fluid" src="imagens/img04.jpeg" alt="First slide" width="945" height="630">
+							<div class="carousel-caption d-none d-md-block">
+								<div class="banner-text">
+									<h5>ENCONTRE O TEMA DO SEU TCC</h5>
+									<p>Pensando nisso, criamos um site de publicação de TCCs já prontos para ajudar vocês nessa etapa.</p>
+								</div>	
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img class="d-block img-fluid" src="imagens/estee-janssens-396889-unsplash.jpg" alt="First slide" width="930" height="632">
+							<div class="carousel-caption d-none d-md-block">
+								<div class="banner-text">
+									<h5>ENCONTRE O TEMA DO SEU TCC</h5>
+									<p>Você pode utilizar algumas dessas ideias de Temas para TCC ou apenas tê-los como inspiração para outro tema que lhe interesse.</p>
+								</div>	
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img class="d-block img-fluid" src="imagens/dedicatoria-de-tcc.jpg" alt="First slide" width="930" height="632">
+							<div class="carousel-caption d-none d-md-block">
+								<div class="banner-text">
+									<h5>ENCONTRE O TEMA DO SEU TCC</h5>
+									<p>É importante ressaltar, também, que o aluno precisa escolher um tema que ele goste de escrever, que seja interessante para sua área de atuação no futuro, etc. :)</p>
+								</div>	
+							</div>
+						</div>
+					</div>	   
+				</div>
+			</div>
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+			  	<div class="modal-dialog">
+			    	<div class="modal-content">
+				      	<div class="modal-header btn-danger">
+				        	<button type="button" class="close" data-dismiss="modal">&times;</button>
+				        	<h4 class="modal-title"><i class="fa fa-exclamation-triangle fa-lg" aria-hidden="true"></i>Login e senha inválidos</h4>
+				      	</div>
+				      	<div class="modal-body">
+				        	<p>Dados inválidos. Por favor, verifique suas credenciais e tente novamente!</p>
+				      	</div>
+				      	<div class="modal-footer">
+				        	<button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+				      	</div>
+			    	</div>
+			  	</div>
+			</div>
+		</div>	
+	</div>
+</div>
+<!--Trocar de tela -->
+<script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
